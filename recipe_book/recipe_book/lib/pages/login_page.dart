@@ -18,10 +18,15 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _buildUI() {
-    return Column(children: [_title()]);
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [_title()],
+      ),
+    );
   }
 
   Widget _title() {
-    return Text('Recip Book');
+    return Text('Recip Book', style: TextStyle(fontSize: 35));
   }
 }
