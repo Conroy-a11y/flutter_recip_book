@@ -13,6 +13,15 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: Colors.green,
       appBar: AppBar(title: Text('Login'), centerTitle: true),
+      body: _buildUI(),
     );
+  }
+
+  Widget _buildUI() {
+    return Column(children: [_title()]);
+  }
+
+  Widget _title() {
+    return Text('Recip Book');
   }
 }
