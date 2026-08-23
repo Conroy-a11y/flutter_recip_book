@@ -15,7 +15,9 @@ class _LoginPageState extends State<LoginPage> {
       appBar: AppBar(title: Text('Login'), centerTitle: true),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               'RecipBook',
@@ -37,6 +39,15 @@ class _LoginPageState extends State<LoginPage> {
 
                     TextFormField(
                       decoration: InputDecoration(hintText: 'Password'),
+                    ),
+
+                    SizedBox(
+                      width: MediaQuery.sizeOf(context).width * 0.60,
+                      child: ElevatedButton(
+                        onPressed: () {},
+
+                        child: Text('Login'),
+                      ),
                     ),
                   ],
                 ),
