@@ -24,6 +24,23 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               width: MediaQuery.sizeOf(context).width * 0.90,
               height: MediaQuery.sizeOf(context).height * 0.30,
+              child: Form(
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+
+                  children: [
+                    TextFormField(
+                      decoration: InputDecoration(hintText: 'Username'),
+                    ),
+
+                    TextFormField(
+                      decoration: InputDecoration(hintText: 'Password'),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
