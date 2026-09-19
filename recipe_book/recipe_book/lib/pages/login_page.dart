@@ -8,6 +8,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +28,7 @@ class _LoginPageState extends State<LoginPage> {
               width: MediaQuery.sizeOf(context).width * 0.90,
               height: MediaQuery.sizeOf(context).height * 0.30,
               child: Form(
+                
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
